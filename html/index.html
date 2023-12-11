@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Status</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/charts.js"></script>
+</head>
+<body>
+    <div class="chart-container" id="ramChartContainer">
+        <div class="chart-label">RAM Usage</div>
+        <canvas id="ramChart"></canvas>
+    </div>
+
+    <div class="chart-container" id="networkChartContainer">
+        <div class="chart-label">Network Usage</div>
+        <canvas id="networkChart"></canvas>
+    </div>
+
+    <div class="chart-container" id="cpuChartContainer">
+        <div class="chart-label">CPU Usage</div>
+        <canvas id="cpuChart"></canvas>
+    </div>
+
+    <div id="diskChartsRow" style="display: flex; flex-wrap: wrap; justify-content: space-around; width: 100%;"></div>
+
+    <footer>
+        System Status &copy; 2023 LainUpComputerSolution
+    </footer>
+</body>
+</html>
